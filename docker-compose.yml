@@ -1,0 +1,78 @@
+#services:
+#  mioSito:   
+#   image: nginx:apline
+#   container_name: server_test
+#   ports: 
+#     - 8080:80 
+
+#networks:
+#  miaRete:
+#    driver: bridge
+  
+
+#services:
+#  mio_analizzatore:
+#    container_name: analizzatore_test
+#    build: 
+#      context: ./analizzatore
+#      dockerfile: Dockerfile
+#    volumes:
+#      - ./risultati:/dati_output
+#    
+#  database:
+#    image: redis:apline
+#    container_name: db_redis
+#    networks:
+#      - miaRete
+#
+#  app:
+#    image: python:3.11-slim
+#    container_name: client_app
+#    networks:
+#      - miaRete
+#    environment:
+#      - DB_HOST=database
+
+networks:
+  miaRete:
+   driver: bridge
+
+volumes:
+  ollama_data:
+
+services:
+  openplc:
+    container_name: openplc-runtime
+    image: ghcr.io/autonomy-logic/openplc-runtime:latest
+    ports:
+      - "502:502"
+      - "8443:8443"
+    networks:
+      - miaRete
+
+  ollama:
+    container_name: ollama-service
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - miaRete
+    
+  orchestrator:
+    build:
+      context: ./orchestrator
+      dockerfile: Dockerfile
+    container_name: orchestrator
+    stdin_open: true   # Mantiene aperto lo standard input (evita l'EOFError)
+    tty: true          # Alloca uno pseudo-terminale
+    depends_on: 
+      - openplc
+      - ollama
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./output:/output
+    networks:
+      - miaRete
+      
+
+    
