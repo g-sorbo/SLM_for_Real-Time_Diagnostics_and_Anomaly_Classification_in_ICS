@@ -8,8 +8,8 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 * **Pipeline IA:** Interrogazione di `Qwen2.5:3b` (tramite Ollama) per il rilevamento anomalie e salvataggio riposte in file `JSONL`.
 
 ## Come Configurare
-Compilando il docker compose con il comando
-'''bash
+Compilando il docker compose con il comando:
+```bash
 docker compose up -d --build
 
 ## Video Dimostrativo del Funzionamento
