@@ -5,7 +5,7 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 ## Caratteristiche
 * **Testbed:** Monitoraggio log di `OpenPLC` via `Docker`.
 * **Iniezione Guasti:** Script Python per simulare guasti e stress di sistema.
-* **Pipeline IA:** Interrogazione di `Qwen2.5:3b` (tramite Ollama) per il rilevamento anomalie con output in `JSONL`.
+* **Pipeline IA:** Interrogazione di `Qwen2.5:3b` (tramite Ollama) per il rilevamento anomalie e salvataggio riposte in file `JSONL`.
 
 ## Video Dimostrativo
 
