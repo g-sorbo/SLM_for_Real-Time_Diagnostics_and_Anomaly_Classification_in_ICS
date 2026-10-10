@@ -7,6 +7,7 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 * **Iniezione Guasti:** Script Python per simulare guasti e stress di sistema.
 * **Pipeline IA:** Interrogazione di `Qwen2.5:3b` (tramite Ollama) per il rilevamento anomalie e salvataggio riposte in file `JSONL`.
 
-## Video Dimostrativo
+## Video Dimostrativo del Funzionamento
+
 
 [![Anteprima Demo](./anteprima.gif)](.video_dimostrativo.mp4)
