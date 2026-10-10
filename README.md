@@ -21,7 +21,10 @@ Prima di avviare il progetto, assicurati di avere installato:
 ```
 docker compose up -d --build
 ```
-
+4. Esegui attachment all'orchestratore: Lancia il seguente comando per inviare comandi e visualizzare le stampe a video:
+```
+docker attach orchestrator
+```
 
 ## Video Dimostrativo del Funzionamento
 [![Anteprima Demo](./anteprima.gif)](.video_dimostrativo.mp4)
