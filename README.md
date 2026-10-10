@@ -15,9 +15,9 @@ Prima di avviare il progetto, assicurati di avere installato:
 ## Configurazione
 1. Importa il programma PLC: Carica la cartella PLC del nostro prototipo in OpenPLC.
 2. Configura Task e Instances: Aggiungi un task ciclico (ad esempio Task0 con intervallo T#20ms) e crea la relativa istanza (instance0) associata al programma main, come illustrato nell'immagine sottostante.
-<img width="1178" height="397" alt="image" src="https://github.com/user-attachments/assets/4d86af23-c175-4f4b-8f3d-917adfc1be16" />
+<img width="1162" height="390" alt="image" src="https://github.com/user-attachments/assets/2a3c402e-087a-453e-baf8-4cdfd4ab80aa" />
 
-L'ambiente si configura in modo automatico compilando il docker compose, eseguendo da terminale il seguente comando:
+3. L'ambiente si configura in modo automatico compilando il docker compose, eseguendo da terminale il seguente comando:
 ```
 docker compose up -d --build
 ```
