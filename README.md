@@ -25,6 +25,7 @@ docker compose up -d --build
 ```
 docker attach orchestrator
 ```
+5. (Opzionale) Avvia la dashboard per visualizzare logs e risposte dello SLM.
 
 ## Video Dimostrativo del Funzionamento
 [![Anteprima Demo](./anteprima.gif)](.video_dimostrativo.mp4)
