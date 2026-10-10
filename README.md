@@ -9,4 +9,4 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 
 ## Video Dimostrativo
 
-[![Anteprima Demo](/dimostrazione/anteprima.gif)](./dimostrazione/video_dimostrativo.mp4)
+[![Anteprima Demo](./dimostrazione/anteprima.gif)](./dimostrazione/video_dimostrativo.mp4)
