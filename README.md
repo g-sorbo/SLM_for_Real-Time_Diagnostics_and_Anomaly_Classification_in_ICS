@@ -9,10 +9,9 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 
 ## Come Configurare
 Compilando il docker compose con il comando:
-```bash
+```
 docker compose up -d --build
+```
 
 ## Video Dimostrativo del Funzionamento
-
-
 [![Anteprima Demo](./anteprima.gif)](.video_dimostrativo.mp4)
