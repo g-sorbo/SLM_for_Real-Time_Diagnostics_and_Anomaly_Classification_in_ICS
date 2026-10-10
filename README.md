@@ -1,5 +1,3 @@
-# SLM for Industrial Diagnostics
-
 # SLM Industrial Fault Detection
 
 Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** nel rilevamento guasti nei sistemi di controllo industriale.
@@ -11,4 +9,4 @@ Progetto di tesi per valutare l'efficacia dei **Small Language Models (SLM)** ne
 
 ## Video Dimostrativo
 
-[Guarda il video dimostrativo](./video_dimostrativo.mp4)
+[![Anteprima Demo](./anteprima.gif)](./video_dimostrativo.mp4)
